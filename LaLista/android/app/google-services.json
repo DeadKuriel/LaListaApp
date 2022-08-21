@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "887634774807",
+    "project_id": "lalistakurko",
+    "storage_bucket": "lalistakurko.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:887634774807:android:9932b5663e9fd17c95c552",
+        "android_client_info": {
+          "package_name": "com.kukasoft.lalista"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "887634774807-l3272gdtuoaljljhcp734ars2m31i91d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0lIuY3eysrMUpgAcIQg_mu1xOyrLhaBA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "887634774807-l3272gdtuoaljljhcp734ars2m31i91d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
