@@ -1,4 +1,4 @@
-package com.lalista.newarchitecture.modules;
+package com.kukasoft.lalista.newarchitecture.modules;
 
 import com.facebook.jni.HybridData;
 import com.facebook.react.ReactPackage;
