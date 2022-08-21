@@ -1,8 +1,28 @@
 // MainScreen, Pantalla inicial
-import React from 'react';
-import {View, Text, TouchableOpacity} from 'react-native';
+import React, {useState, useEffect} from 'react';
+import {View, Text, TouchableOpacity, Image} from 'react-native';
+import storage from '@react-native-firebase/storage';
 
 export default function MainScreen() {
+  const [urlImage, setUrlImage] = useState('');
+
+  const getImage = async () => {
+    const reference = await storage()
+      .ref('/test/mi6a8fpqodc71.png')
+      .getDownloadURL()
+      .then(data => {
+        console.log('storage -> data', data);
+        setUrlImage(data);
+      })
+      .catch(error => {
+        console.log('storage -> error', error);
+      });
+  };
+
+  useEffect(() => {
+    getImage();
+  }, []);
+
   return (
     <>
       <View
@@ -35,6 +55,14 @@ export default function MainScreen() {
           onPress={() => {}}>
           <Text>Boton 2</Text>
         </TouchableOpacity>
+        {urlImage && (
+          <Image
+            style={{width: 300, height: 300, alignSelf:'center', resizeMode:'cover'}}
+            source={{
+              uri: urlImage,
+            }}
+          />
+        )}
       </View>
     </>
   );
