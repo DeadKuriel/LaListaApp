@@ -44,6 +44,7 @@ ios/.xcode.env.local
 # Visual studio
 .vscode
 .vs
+*.code-workspace
 
 # Android/IntelliJ y Gradle
 #
@@ -53,7 +54,6 @@ build/
 local.properties
 *.iml
 *.hprof
-/android/
 
 # Gradle
 #
